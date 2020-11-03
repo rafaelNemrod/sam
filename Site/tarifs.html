@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="On trouvera ici tous les tarifs pratiqués par Samantha LECA, la sophrologue." />
+<!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="css/tarifs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="shortcut icon" href="ressources/Logo_ico.ico" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!-- Titre -->
+    <title>Tarifs</title>
+</head>
+
+<body id="darkxlight">
+    <div id="bloc-page">
+
+<!--Bannière haut du site-->
+        <header>
+            <div id="top">
+                <div class="subTop">
+                    <div class="specialites">
+                        <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                        <span class="textSpecialite">Sophrologie</span>
+                    </div>
+                    <div class="specialites">
+                        <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                        <span class="textSpecialite">Yoga du rire</span>
+                    </div>
+                    <div class="specialites">
+                        <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                        <span class="textSpecialite">Hypnose</span>
+                    </div> 
+                </div>
+                <div class="logoDiv">
+                    <div class="emptyDiv"></div>
+                    <div class="logo">
+                        <div class="backgroundLogo">
+                        <img class="logoClass" src="ressources/Logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logoText">
+                        &gt Des outils pour accompagner le quotidien<br>
+                        &gt Redécouverte de son corps<br>
+                        &gt Confiance en soi<br>
+                        &gt Géstion des émotions
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.facebook.com/samanthasophrologue/" target="_blank">
+                <img class="logofb"
+                    src="ressources/logofbook.png" alt="Logo Fb">
+            </a>
+        </header>
+
+<!--Menu de navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#anchor">Votre sophrologue</a></li>
+                <li><a href="index.html#citation1">La sophrologie</a></li>
+                <li><a href="index.html#citation2">Yoga du rire</a></li>
+                <li><a href="index.html#citation3">Hypnose</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a class="active" href="tarifs.html">Tarifs</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="https://www.facebook.com/samanthasophrologue/" target="_blank"><img id="logofb"
+                            src="ressources/logofbook.png" alt="Logo Fb"></a></li>
+            </ul>
+        </nav>
+
+
+<!--Menu téléphone-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Accueil</a>
+            <a href="index.html#votresophrologue">Votre sophrologue</a>
+            <a href="index.html#lasophrologie">La sophrologie</a>
+            <a href="index.html#yoga">Yoga du rire</a>
+            <a href="index.html#hypnose">Hypnose</a>
+            <a href="stages.html">Stages</a>
+            <a href="temoignages.html">Témoignages</a>
+            <a href="tarifs.html" class="active">Tarifs</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="javascript:void(0);" class="icon" onclick="navTel()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+<!--Bouton du Mode nuit-->   
+        <div class="darkMode">
+            <div class="iconDarkMode">
+                <img class="imgDarkMode" title="Passer en mode Nuit/Jour" src="ressources/day.png" alt="Icone du DarkMode">
+            </div>
+            <p class="btnDark" onclick="darkxlight()">Jour/Nuit</p>
+        </div>
+
+
+<!-- Début de la Div tarifs -->
+        <div id="mainTarif">
+            <div id="coteup">
+                <div id="sophrologie">
+                    <p><img class="lotus animated" src="ressources/LotusBleuDef.png" alt="Lotus"></p>
+                    <div id="tarifSofro">
+                        <H2 class="tarif tarifSofro">Sophrologie</H2>
+                        <p class="tarif">Première consultation 30€</p>
+                        <p class="tarif">Individuel 45€</p>
+                        <p class="tarif">Etudiant - Ados - Enfants 40€</p>
+                        <p class="tarif">Forfait 10 séances 390€</p>
+                    </div>
+                </div>
+
+                <div id="hypnose">
+                    <p><img class="lotus animated" src="ressources/LotusBleuDef.png" alt="Lotus"></p>
+                    <div id="tarifHypno">
+                        <H2 class="tarif tarifHypno">Hypnose Ericksonniene</H2>
+                        <p class="tarif">Première consultation 40€</p>
+                        <p class="tarif">Individuel 60€</p>
+                        <p class="tarif">Etudiant - Ados - Enfants 45€</p>
+                    </div>
+                </div>
+
+                <div id="yoga">
+                    <p><img class="lotus animated" src="ressources/LotusBleuDef.png" alt="Lotus"></p>
+                    <div id="tarifYoga">
+                        <H2 class="tarif tarifYoga">Yoga du rire</H2>
+                        <p class="tarif">En groupe (La séance) 10€</p>
+                        <p class="tarif">Forfait 10 séances 80€</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="duree">- Durée des séances adultes et groupes : 1 h  - Durée des séances étudiants, ados et enfants : 45 min -</div>
+
+            <div id="cotedown">
+                <div id="paiement">
+                    <p><img class="lotus animated" src="ressources/LotusBleuDef.png" alt="Lotus"></p>
+                    <div id="modePaiement">
+                        <H2 class="tarif tarifPaiement">Modes de paiements</H2>
+                        <p class="tarif">Les paiements sont à effectuer par chèque ou en espèces.</p>
+                    </div>
+                </div>
+
+                <div id="remboursement">
+                    <p><img class="lotus animated" src="ressources/LotusBleuDef.png" alt="Lotus"></p>
+                    <div id="modeRemboursement">
+                        <H2 class="tarif tarifRembou">Remboursement</H2>
+                        <p class="tarif">Certaines mutuelles peuvent vous accompagner et prendre en charge vos séances.
+                        </p>
+                        <p class="tarif">N'hésitez pas à prendre contact avec votre complémentaire santé pour plus
+                            d'informations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+<!--Début du Footer-->
+    <section id="footer">
+        
+        <div id="texteFooter">
+            <div id="navFooter">
+                <h4>Navigation :</h4>
+                <p><a class="styletext" href="#votresophrologue">Votre sophrologue</a></p>
+                <p><a class="styletext" href="#lasophrologie">La sophrologie</a></p>
+                <p><a class="styletext" href="#yoga">Yoga du rire</a></p>
+                <p><a class="styletext" href="#hypnose">Hypnose</a></p>
+                <p><a class="styletext" href="stages.html">Stages</a></p>
+                <p><a class="styletext" href="temoignages.html">Témoignages</a></p>
+                <p><a class="styletext" href="tarifs.html">Tarifs</a></p>
+                <p><a class="styletext" href="contacts.html">Contacts</a></p>
+            </div>
+            <div id="credits">
+                <h4>Crédits :</h4>
+                <p>Photos : <a class="styletext" href="http://pixabay.com" target="_blank">Pixabay</a></p>
+                <p>Hébergement : Aurélien TESSIER</p>
+                <p>Réalisation : <a class="styletext" href="mailto:raphael.bertrand@lilo.org"
+                        title="Cliquer pour envoyer un email a raphael.bertrand@lilo.org">Raphaël BERTRAND</a></p>
+            </div>
+        </div>
+        <p><img id="copy" src="ressources/copyright.png" alt="copyright"></p>
+    </section>
+    <script src="js/tarifs.js"></script>
+
+</body>
+
+</html>

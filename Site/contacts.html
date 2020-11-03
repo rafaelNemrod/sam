@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="On trouvera ici tous les contacts pour joindre Samantha LECA, la sophrologue." />
+<!-- Lien vers le CSS -->
+        <link rel="stylesheet" href="css/contacts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="ressources/Logo_ico.ico" type="image/x-icon" />
+
+<!-- Titre -->   
+        <title>Contacts</title>
+    </head>
+    
+    <body id="darkxlight">
+
+<!--Bannière haut du site-->
+        <header>
+                <div id="top">
+                        <div class="subTop">
+                            <div class="specialites">
+                                <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                                <span class="textSpecialite">Sophrologie</span>
+                            </div>
+                            <div class="specialites">
+                                <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                                <span class="textSpecialite">Yoga du rire</span>
+                            </div>
+                            <div class="specialites">
+                                <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                                <span class="textSpecialite">Hypnose</span>
+                            </div> 
+                        </div>
+                        <div class="logoDiv">
+                            <div class="emptyDiv"></div>
+                            <div class="logo">
+                                <div class="backgroundLogo">
+                                <img class="logoClass" src="ressources/Logo.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="logoText">
+                                &gt Des outils pour accompagner le quotidien<br>
+                                &gt Redécouverte de son corps<br>
+                                &gt Confiance en soi<br>
+                                &gt Géstion des émotions
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.facebook.com/samanthasophrologue/" target="_blank">
+                        <img class="logofb"
+                            src="ressources/logofbook.png" alt="Logo Fb">
+                    </a>
+        </header>
+
+<!--Menu de navigation-->
+        <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#anchor">Votre sophrologue</a></li>
+            <li><a href="index.html#citation1">La sophrologie</a></li>
+            <li><a href="index.html#citation2">Yoga du rire</a></li>
+            <li><a href="index.html#citation3">Hypnose</a></li>
+            <li><a href="stages.html">Stages</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a class="active" href="contacts.html">Contacts</a></li>
+            <li><a href="https://www.facebook.com/samanthasophrologue/" target="_blank"><img id="logofb" src="ressources/logofbook.png" alt="Logo Fb"></a></li>
+        </ul>
+        </nav>
+
+<!--Menu téléphone--> 
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Accueil</a>
+            <a href="index.html#votresophrologue">Votre sophrologue</a>
+            <a href="index.html#lasophrologie">La sophrologie</a>
+            <a href="index.html#yoga">Yoga du rire</a>
+            <a href="index.html#hypnose">Hypnose</a>
+            <a href="stages.html">Stages</a>
+            <a href="temoignages.html">Témoignages</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="contacts.html" class="active">Contacts</a>
+            <a href="javascript:void(0);" class="icon" onclick="navTel()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+<!--Bouton du Mode nuit-->   
+        <div class="darkMode">
+            <div class="iconDarkMode">
+                <img class="imgDarkMode" title="Passer en mode Nuit/Jour" src="ressources/day.png" alt="Icone du DarkMode">
+            </div>
+            <p class="btnDark" onclick="darkxlight()">Jour/Nuit</p>
+        </div>
+
+<!--Début de la section formulaire + maps-->
+        <div id="maps">
+
+<!--Formulaire-->
+            <form id="formulaire" method="post" action="page.php">
+                
+                <p id="intro">Si vous desirez m'envoyer un petit mot, c'est en dessous :</p>
+                
+                    <label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex : Durand" size="30" maxlength="30" required/><span>*</span>
+                    <br/>
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex : Eve" size="20" maxlength="20" required/><span>*</span>
+                    <br/>
+                    <label for="email">Votre email</label>
+                    <input type="email" name="email" id="email" placeholder="Ex : zen@zen.com" size="20" maxlength="20" required/><span>*</span>
+                    <br/>
+                    <label for="newsletter">Voulez-vous vous abonner à la newsletter?</label><br>
+                    <input type="checkbox" name="newsletter" checked="checked" id="checkbox" /> oui
+
+
+                    <br/>
+                    <label for="choix">Choisissez votre sujet</label>
+                    <select name="choix" id="choix">
+                        <option value="sophrologie">Sophrologie</option>
+                        <option value="yoga">Yoga du rire</option>
+                        <option value="hypnose">Hypnose</option>
+                        <option value="Relaxation">Relaxation</option>
+                        <option value="stages">Stages</option>
+                        <option value="autre">Autre</option>
+                    </select>
+
+
+                    <br/>
+                    <label for="message">Votre message</label>
+                    <br/>
+                    <textarea name="message" id="message" rows="20" cols="48" required></textarea>
+                    <br/>
+                    <p id="mention">* Champs obligatoire</p>
+                    <div class="content">
+                            <div class="button-wrapper">
+                            <a href="#" class="a-btn">
+                                <span></span>
+                                <span class="btn">Envoyer</span>
+                                <span class="btn">Clic!</span>
+                            </a>
+                            </div>
+                        </div>
+                
+            </form>
+
+<!--Google maps et contact-->
+            
+                <section id="mapsContact">
+                    <p>
+                        <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.483852601112!2d3.970240550469257!3d43.6589059599782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a6bc0e6b16f9%3A0x53c8355d05e02f46!2s17%20Rue%20de%20la%20Cadoule%2C%2034740%20Vendargues!5e0!3m2!1sfr!2sfr!4v1573824345065!5m2!1sfr!2sfr" width="600" height="450" allowfullscreen=""></iframe>
+                    </p>
+                        <div class="telMail">  
+                            <p class ="tel">  
+                                <img class="iconTel" src="ressources/iconTelDef.png" alt="icon">
+                                <span>06 61 90 26 35</span>
+                            </p>
+                            <br/>
+                            <p class ="tel"> 
+                                <img class="iconEmail" src="ressources/iconEmailDef.png" alt="icon">
+                                <a class="styletext" href="mailto:samantha.leca.sophrologue@gmail.com" title="Cliquer ici pour m'envoyer un mail!">samantha.leca.sophrologue@gmail.com</a>
+                            </p>
+                            <br/>
+                            <p class ="tel">
+                                <img class="iconAdd" src="ressources/iconAddrDef.png" alt="icon">
+                                <span>17 rue de la Cadoule 34740 Vendargues</span>
+                            </p>
+                            <br>
+                            <p class ="tel">
+                                <img class="iconBus" src="ressources/iconBusDef.png" alt="icon">
+                                <span>ligne 21</span>
+                            </p>
+                            <br>
+                            <p class ="tel">
+                                <img class="iconBus" src="ressources/iconHorairesDef.png" alt="icon">
+                                <span>Du Lundi au Vendredi de 10h à 19h</span>
+                            </p>
+                        </div>
+                </section>       
+        </div>
+        <hr/>
+<!--Footer-->
+        <section id="footer">
+            
+            <div id="texteFooter">
+                <div id="navFooter">
+                    <h4>Navigation :</h4>
+                    <p><a class="styletext" href="#votresophrologue">Votre sophrologue</a></p>
+                    <p><a class="styletext" href="#lasophrologie">La sophrologie</a></p>
+                    <p><a class="styletext" href="#yoga">Yoga du rire</a></p>
+                    <p><a class="styletext" href="#hypnose">Hypnose</a></p>
+                    <p><a class="styletext" href="stages.html">Stages</a></p>
+                    <p><a class="styletext" href="temoignages.html">Témoignages</a></p>
+                    <p><a class="styletext" href="tarifs.html">Tarifs</a></p>
+                    <p><a class="styletext" href="contacts.html">Contacts</a></p>
+                </div>
+                <div id="credits">
+                    <h4>Crédits :</h4>
+                    <p>Photos : <a class="styletext" href="http://pixabay.com" target="_blank">Pixabay</a></p>
+                    <p>Hébergement : Aurélien TESSIER</p>
+                    <p>Réalisation : <a class="styletext" href="mailto:raphael.bertrand@lilo.org" title="Cliquer pour envoyer un email a raphael.bertrand@lilo.org">Raphaël BERTRAND</a></p>
+                </div>
+            </div>
+            <p><img id="copy" src="ressources/copyright.png" alt="copyright"></p>  
+        </section>
+        <script src="js/contacts.js"></script>
+
+    </body>
+</html>

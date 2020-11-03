@@ -1,0 +1,1115 @@
+
+
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
+/* Tous les titres H1 */
+  h1{
+    font-family: Tahoma;
+    margin-top: 0;
+    font-size: 22px;
+  }
+
+/* Fonction responsive des titres H1 */
+  @media screen and (max-width: 479px){
+    h1{
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+/* Class des citations */
+  .citation{
+    border: 5px solid #E4C8E0;
+    border-radius: 45px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    text-align: center;
+    font-family: Rochester;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+  }
+  .citationText{
+    width: 60%;
+  }
+  .lotus{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .lotus:hover{
+    transform: scale(1.2);
+  }
+
+/* Fonction responsive des Citations */
+  @media screen and (max-width: 479px){
+    .citation{
+      font-size: 26px;
+      text-align: center;
+    }
+    .lotus{
+      width: 50px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1080px){
+    .element{
+      font-size: 13px;
+    }
+    .lotus{
+      width: 90%;
+    }
+  }
+
+/* Texte de tous les paragraphes sauf Relaxation */
+  .element{
+    font-size: 14px;
+  }
+
+/* Fonction responsive de tous les paragraphes sauf Relaxation */
+  @media screen and (max-width: 479px){
+    .element{
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1080px){
+    .element{
+      font-size: 13px;
+    }
+  }
+
+/* Bouton pour remonter au menu */
+  #boutonUp{
+  position: fixed; 
+  bottom: 5px; 
+  right: -100px
+  }
+
+ /* Fonction responsive du bouton Up  */
+  @media screen and (max-width: 479px){
+    #boutonUp{
+      display: none;
+    }
+  }
+
+ /* Fonction responsive Test des différents format d'écran   
+@media screen and (max-width: 479px){
+  body{
+    background-color: red;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 719px){
+  body{
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1079px){
+  body{
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1450px){
+  body{
+    background-color: pink;
+  }
+}*/
+
+/* Bandeau top */
+  #top{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    
+  }
+  .subTop{
+    display: flex;
+    justify-content: space-evenly;  
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+  .textSpecialite{
+    font-family: "arial narrow", sans-serif;
+    font-size: 3.5em;
+    color: #6297BE;
+    letter-spacing: 10px;
+  }
+  .petale{
+    width: 45px;
+  }
+
+/* Bandeau fond rose + logo + textes */
+  .logoDiv{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4C8E0;
+    margin-bottom: 4%;
+  }
+  .emptyDiv{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+  .logo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    animation-name: logo;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+  }
+  .backgroundLogo{
+    background-color: white;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 30px 40px #444;
+  }
+  .logoClass{
+    position: relative;
+    margin-top: 10%;
+    animation-name: banniere;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+  }
+  .logoText{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+  }
+
+/* logo Fb quand menu responsif */
+  .logofb{
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 5px;
+    z-index: 2;
+  }
+
+/* Fonction responsive du Bandeau top */
+  @media screen and (max-width: 479px) {
+    #top{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .subTop{
+      flex-direction: column;
+      margin: 0;
+      width: 26%;
+    }
+    .petale{
+      width: 15px;
+    }
+    .textSpecialite{
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+    .logoDiv{
+      justify-content: left;
+      width: 74%;
+      margin: 0;
+    }
+    .logo{
+      width: 35%;
+    }
+    .emptyDiv{
+      width: 0px;
+    }
+    .backgroundLogo{
+      width: 120px;
+      height: 120px;
+      box-shadow: 0px 15px 25px #444;
+    }
+    .logoClass{
+      width: 75%;
+    }
+    .logoText{
+      position: relative;
+      width: 60%;
+      font-size: 0.8rem;
+      line-height: 1em;
+      margin-left: 1%;
+    }
+    
+  }
+  @media screen and (min-width: 480px) and (max-width: 719px){
+    .petale{
+      width: 25px;
+    }
+    .textSpecialite{
+      font-size: 1.5em;
+    }
+    .logoDiv{
+      justify-content: left;
+    }
+    .logo{
+      width: 50%;
+    }
+    .emptyDiv{
+      width: 20px;
+    }
+    .backgroundLogo{
+      width: 200px;
+      height: 200px;
+    }
+    .logoClass{
+      width: 80%;
+    }
+    .logoText{
+      width: 40%;
+      font-size: 1rem;
+      line-height: 1em;
+      margin-left: 5%;
+    }
+  } 
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    .petale{
+      width: 35px;
+    }
+    .textSpecialite{
+      font-size: 2.5em;
+    }
+    .logoDiv{
+      justify-content: left;
+    }
+    .logo{
+      width: 50%;
+    }
+    .backgroundLogo{
+      width: 250px;
+      height: 250px;
+    }
+    .logoClass{
+      width: 75%;
+    }
+    .emptyDiv{
+      display: none;
+    }
+    .logoText{
+      font-size: 1.2rem;
+      line-height: 1.2em;
+    }
+  }
+  @media screen and (min-width: 1080px) and (max-width: 1450px){
+    .backgroundLogo{
+      width: 280px;
+      height: 280px;
+    }
+    .logoClass{
+      width: 75%;
+    }
+    .logoText{
+      font-size: 1.2rem;
+      line-height: 1.2m;
+    }
+  }
+  @media screen and (min-width: 720px) {
+    .logofb{
+      display: none;
+    }
+  }
+
+/* Animation de la banniere */
+  @keyframes banniere {
+    0%{left:-1500px}
+    100% {left : 0px}
+  }
+  @keyframes logo {
+    0%{opacity: 0}
+    100% {opacity: 1}
+  }
+  
+
+
+
+/* Menu de Navigaiton */
+  nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  ul{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    background-color: #E8DDEA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 45px;
+    box-shadow: 0px 4px 5px  #444;
+    position: relative;
+    animation-name: menu;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+  }
+  .Quick-navigation{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    background-color: #E8DDEA;
+    border-radius: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  li a {
+    color: black;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+  }
+  a:hover:not(.active) {
+    color: #6297BE;
+  }
+/* Fonction du highlight du menu */
+  .Quick-navigation-item.current {
+    color: #fff;
+  }
+  .active {
+    color:#6297BE;
+    border-bottom: 3px solid #6297BE;
+  } 
+
+/* Animation du menu */
+  @keyframes menu {
+    0%{right:-1500px} 
+    
+    100% {right : 0px}
+  }
+
+/* Fonction responsive du menu de navigation */
+  @media screen and (max-width: 719px){
+    nav{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    li{
+      width: 20%;
+      font-size: 14px;
+      text-align: center;
+    }
+    #logofb{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+
+/* Fonction du menu téléphone */
+  .topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: #E8DDEA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 45px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color:black;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    color:#6297BE;
+  }
+  
+  .topnav a.active {
+    color:#6297BE;
+    text-decoration: underline;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 719px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    #logofb{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 719px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 720px) {
+    #myTopnav{
+      display: none;
+    }
+  }
+
+
+/* Début de la section DarkMode */
+.darkMode{
+  margin: 0;
+  display: flex;
+  position: fixed;
+  right: -7vw;
+  top: 25vh;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  width: 10vw;
+  transition: transform .5s;
+}
+.darkMode:hover{
+  transform: translateX(-7vw);
+}
+.iconDarkMode{
+  width: 3vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.imgDarkMode{
+  width: 70%;
+}
+.btnDark{
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  cursor: pointer;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Div de la Section VOTRE SOPHROLOGUE */
+  .votresophrologue{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 5%;
+  }
+
+/* Div qui est le conteneur du titre et du paragraphe */
+  #votre_sophrologue{
+    display: flex;
+    flex-direction: column;  
+    width: 60%;  
+  }
+
+/* Photo de Samantha */
+/* Conteneur principal de la photo*/
+  .overlay-image {
+    position: relative;    
+    z-index: 1;
+  }
+  #PhotoSam{
+    width: 339px;
+    height: 508.5px;
+    border-radius: 45px;
+    position: relative;
+  }
+
+/* Texte  */
+  .overlay-image .text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 2em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    margin-top: 50%;
+  }
+
+/* Overlay */
+  .overlay-image .texteCache {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+/* Apparition overlay sur passage souris */
+  .overlay-image:hover .texteCache {
+    opacity: 1;
+  }
+
+  .overlay-image .texteCache {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 45px;
+  }
+
+/* Fonction responsive de la section VOTRE SOPHROLOGUE */
+  @media screen and (max-width: 479px){
+    #votresophrologue{
+      margin: 0;
+      padding: 0;
+      margin-top: 5%;
+    }
+    #votre_sophrologue{
+      width: 100%;
+      margin: 3%;
+    }
+    #PhotoSam{
+      display: none;
+    }
+    #PhotoSamMobile{
+      width: 100%;
+    }
+    .overlay-image .text{
+      font-size: 12px;
+      margin-top: 25%;
+    }
+    .overlay-image .texteCache {
+      border-radius: 0;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 719px){
+    #votre_sophrologue{
+      width: 100%;
+      margin-top: 3%; 
+    }
+    #PhotoSam{
+      width: 275px;
+      height: 412px;
+    }
+    .overlay-image .text{
+      font-size: 12px;
+    }
+  } 
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    #votre_sophrologue{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    #PhotoSamMobile{
+      display: none;
+    }
+  }
+  
+ 
+
+/* Div de la Section LA SOPHROLOGIE */
+  #lasophrologie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 5%;
+  }
+  
+/* Div qui est le conteneur du titre et du paragraphe */
+  #La_sophrologie{
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+  }
+
+/* Bouton lire plus/moins La sophrologie */
+  #more {
+    display: none;
+  }
+
+  #myBtn{
+    width: 100px;
+    background-color: #E4C8E0;
+    margin-top: 5%;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 1%;
+    transition: all 0.5s;
+    cursor: pointer;
+    }
+
+  #myBtn:hover{
+    background-color: #6297BE;
+  }
+
+/* Photo sophrologie */
+  #PhotoSofro{
+    width: 339px;
+    height: 508.5px;
+    border-radius: 45px;
+    position: relative;
+  }
+
+/* Fonction responsive de la section LA SOPHROLOGIE */
+  @media screen and (max-width: 479px){
+    #lasophrologie{
+      margin: 0;
+      padding: 0;
+      margin-top: 5%;
+    }
+    #La_sophrologie{
+      width: 100%;
+      margin: 3%; 
+    }
+    #PhotoSofro{
+      display: none;
+    }
+    #PhotoSofroMobile{
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 719px){
+    #La_sophrologie{
+      width: 100%;
+      margin-top: 3%; 
+    }
+    #PhotoSofro{
+      width: 275px;
+      height: 412px;
+    }
+  } 
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    #La_sophrologie{
+      width: 50%;
+    }
+    #PhotoSofro{
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: 480px){
+    #PhotoSofroMobile{
+      display: none;
+    }
+  }
+
+
+
+/* Div de la Section YOGA DU RIRE */
+  #yoga{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin: 5%;
+  }
+
+/* Div qui est le conteneur du titre et du paragraphe */
+  #YogaDuRire{
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+  }
+/* Bouton lire plus/moins Yoga du rire */
+  #more2 {
+    display: none;
+  }
+
+  #myBtn2 {
+    width: 100px;
+    background-color: #E4C8E0;
+    margin-top: 5%;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 1%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  #myBtn2:hover {
+    background-color: #6297BE;
+  }
+
+/* Photo Yoga du rire */
+  #PhotoYoga{
+    width: 339px;
+    height: 508.5px;
+    border-radius: 45px;
+  }
+
+/* Fonction responsive de la section YOGA DU RIRE */
+  @media screen and (max-width: 479px){
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    #yoga{
+      margin: 0;
+      padding: 0;
+      margin-top: 5%;
+    }
+    #YogaDuRire{
+      width: 100%;
+      margin: 3%;
+    }
+    #PhotoYoga{
+      display: none;
+    }
+    #PhotoYogaMobile{
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 719px){
+    #YogaDuRire{
+      width: 100%;
+      margin-top: 3%; 
+    }
+    #PhotoYoga{
+      width: 275px;
+      height: 412px;
+    }
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    #YogaDuRire{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    #PhotoYogaMobile{
+      display: none;
+    }
+  }
+
+
+/* Div de la Section HYPNOSE */
+  #hypnose{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5%;
+  }
+
+/* Div qui est le conteneur du titre et du paragraphe */
+  #l_hypnose{
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+  } 
+
+/* Photo L"Hypnose */
+  #PhotoHypnose{
+    width: 339px;
+    height: 508.5px;
+    border-radius: 45px;
+  }
+
+/* Fonction responsive de la section HYNOSE */
+  @media screen and (max-width: 479px){
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    #hypnose{
+      margin: 0;
+      padding: 0;
+      margin-top: 5%;
+    }
+    #l_hypnose{
+      width: 100%; 
+      margin: 3%;
+    }
+    #PhotoHypnose{
+      display: none;
+    }
+    #PhotoHypnoseMobile{
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 719px){
+    #l_hypnose{
+      width: 100%;
+      margin-top: 3%; 
+    }
+    #PhotoHypnose{
+      width: 275px;
+      height: 412px;
+    }
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    #l_hypnose{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    #PhotoHypnoseMobile{
+      display: none;
+    }
+  }
+
+/* Photo La Relaxation */
+  #gallerieRelaxation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    overflow: hidden;
+    /* background-color: #E4C8E0; */
+    border-radius: 45px;
+    padding: 3%;
+  }
+
+  .PhotoRelaxation{
+    width: 250px;
+    border-radius: 45px;
+  }
+  .PhotoRelaxation:hover{
+    transform: scale(1.2);
+  }
+
+/* Fonction responsive de la photo Relaxation */
+  @media screen and (max-width: 719px){
+    .PhotoRelaxation{
+      width: 150px;
+    }
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    .PhotoRelaxation{
+      width: 200px;
+    }
+  }
+
+
+/* Div de la section Google maps et contact 2*/
+  #maps{
+    border-radius: 45px;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  /* Id de l'iframe google maps */
+  #clapiers{
+    border-radius: 45px;
+    width:100%;
+    height: 300px;
+  }
+
+/* Fonction responsive de la Section Maps */
+  @media screen and (max-width: 479px){
+    #maps{
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 0;
+    }
+    #clapiers{
+      border-radius: 0;
+    }
+  }
+
+
+/* Div de la section CONTACTS */
+  #contacts{
+    background-color: #E4C8E0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 45px;
+    font-size: 1vw;
+    height: 300px;
+    margin-bottom: 5%;
+  }
+
+/* Photo de contacts */
+  .PhotoContacts{
+    border-radius: 45px;
+  }
+  .PhotoContacts:hover{
+    box-shadow: 0px 0px 5px #444;
+  }
+
+/* Texte de contacts */
+  .tel{
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 1%;
+  }
+  .telMail, .addBus, .horaires{
+    background-color: #E8DDEA;
+    border-radius: 45px; 
+    border: 1px solid white; 
+    /* width: 27vw;   */
+  }
+  .telMail:hover, .addBus:hover, .horaires:hover {
+    box-shadow: 0px 0px 5px #444;
+  }
+  .iconTel, .iconEmail, .iconAdd, .iconBus {
+    /* width: 11%; */
+    margin-right: 2%;
+    margin-left: 1%;
+  }
+  
+/* Fonction responsive de la Section Contacts */
+  @media screen and (max-width: 479px){
+    #contacts{
+      height: 780px;
+      justify-content: center;
+      font-size: 12px;
+      border-radius: 0px;
+    }
+    #imgContact{
+      display: none;
+    }
+    .PhotoContactsMobile{
+      width: 100%;
+    }
+    .telMail, .addBus, .horaires{
+      width: 100%;
+      height: 150px;
+      margin-top: 5%;
+      border-radius: 0px;
+    }
+    .iconTel, .iconEmail, .iconAdd, .iconBus {
+      margin-left: 2%;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 719px){
+    #contacts{
+      height: 370px;
+      justify-content: center;
+      font-size: 12px;
+    }
+    #imgContact{
+      width: 45%;
+    }
+    .telMail, .addBus, .horaires{
+      width: 45%;
+      height: 148px;
+    }
+    .iconTel, .iconEmail, .iconAdd, .iconBus {
+      width: 9%;
+      margin-left: 2%;
+    }
+    .telMail, .horaires{
+      margin-left: 2%;
+    }
+    .addBus, .horaires{
+      margin-top: 2%;
+    }
+    
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080px){
+    #contacts{
+      height: 400px;
+      justify-content: center;
+    }
+    #imgContact{
+      width: 40%;
+      margin-top: 2%;
+    }
+    .telMail, .addBus, .horaires{
+      width: 40%;
+      margin-top: 2%;
+      height: 148px;
+    }
+    .iconTel, .iconEmail, .iconAdd, .iconBus {
+      width: 9%;
+      margin-left: 2%;
+    }
+    .telMail, .horaires{
+      margin-left: 2%;
+    }
+  }
+  @media screen and (min-width: 480px){
+    #imgContactMobile{
+      display: none;
+    }
+  }
+
+
+/* Debut du Footer */
+  #footer{
+    background-image: url("lotusdef.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-size: 14px;
+    line-height: 130%;
+    color: black;
+  }
+  #texteFooter{
+    display: flex;
+    margin-left: 2%;
+  }
+  #navFooter{
+    margin-right: 10%;
+  }
+  .styletext{
+    text-decoration: none;
+    color: black;
+  }
+  .styletext:visited{
+    color: black;
+  }
+  #copy{
+    width: 50px;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+  }
+
+/* Fonction responsive du footer */
+  @media screen and (max-width: 479px){
+    #footer{
+      font-size: 10px;
+    }
+    #copy{
+      width: 30px;
+    }
+  }

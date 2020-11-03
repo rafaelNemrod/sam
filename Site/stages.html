@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="On trouvera ici, tous les stages effectués par Samantha LECA, la sophrologue." />
+<!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="css/stages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="ressources/Logo_ico.ico" type="image/x-icon" />
+
+<!-- Titre -->
+    <title>Stages</title>   
+  </head>
+  
+  <body id="darkxlight">
+
+  <header>
+      <!--Bannière haut du site-->
+      <div id="top">
+          <div class="subTop">
+              <div class="specialites">
+                  <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                  <span class="textSpecialite">Sophrologie</span>
+              </div>
+              <div class="specialites">
+                  <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                  <span class="textSpecialite">Yoga du rire</span>
+              </div>
+              <div class="specialites">
+                  <img class="petale" src="ressources/topPetale.png" alt="Pétales">
+                  <span class="textSpecialite">Hypnose</span>
+              </div> 
+          </div>
+          <div class="logoDiv">
+              <div class="emptyDiv"></div>
+              <div class="logo">
+                  <div class="backgroundLogo">
+                  <img class="logoClass" src="ressources/Logo.png" alt="logo">
+                  </div>
+              </div>
+              <div class="logoText">
+                  &gt Des outils pour accompagner le quotidien<br>
+                  &gt Redécouverte de son corps<br>
+                  &gt Confiance en soi<br>
+                  &gt Géstion des émotions
+              </div>
+          </div>
+      </div>
+      <a href="https://www.facebook.com/samanthasophrologue/" target="_blank">
+          <img class="logofb"
+              src="ressources/logofbook.png" alt="Logo Fb">
+      </a>
+  </header>
+
+<!--Menu de navigation-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#anchor">Votre sophrologue</a></li>
+        <li><a href="index.html#citation1">La sophrologie</a></li>
+        <li><a href="index.html#citation2">Yoga du rire</a></li>
+        <li><a href="index.html#citation3">Hypnose</a></li>
+        <li><a class="active" href="stages.html">Stages</a></li>
+        <li><a href="temoignages.html">Témoignages</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="https://www.facebook.com/samanthasophrologue/" target="_blank"><img id="logofb" src="ressources/logofbook.png" alt="Logo Fb"></a></li>
+      </ul>
+    </nav>
+
+
+<!--Menu téléphone--> 
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#votresophrologue">Votre sophrologue</a>
+    <a href="index.html#lasophrologie">La sophrologie</a>
+    <a href="index.html#yoga">Yoga du rire</a>
+    <a href="index.html#hypnose">Hypnose</a>
+    <a href="stages.html" class="active">Stages</a>
+    <a href="temoignages.html">Témoignages</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="javascript:void(0);" class="icon" onclick="navTel()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<!--Bouton du Mode nuit-->   
+  <div class="darkMode">
+    <div class="iconDarkMode">
+        <img class="imgDarkMode" title="Passer en mode Nuit/Jour" src="ressources/day.png" alt="Icone du DarkMode">
+    </div>
+    <p class="btnDark" onclick="darkxlight()">Jour/Nuit</p>
+  </div>
+
+
+<!--Carroussel-->
+    <div id="mainDiv">
+      <aside>
+        <div id="panneauDeclencheur1" class="panneauDeclencheur" data-panneau-id="panneauContenu1">
+          Stage le "Lâcher prise"
+        </div>
+        <div class="panneauDeclencheur" data-panneau-id="panneauContenu2">
+          Stage de sophrologie : Préparation à la matérnité
+        </div>
+        <div class="panneauDeclencheur" data-panneau-id="panneauContenu3">
+          Stage de sophrologie : Enfants et enfants Dys, TDAH, HP
+        </div>
+        <div id="panneauDeclencheur2" class="panneauDeclencheur" data-panneau-id="panneauContenu4">
+          Stage d'initiation à la sophrologie
+        </div>
+      </aside>
+      <main>
+        <div class="panneauContenu" id="panneauContenu1">
+          <p>
+            <img class="PhotoStages" src="ressources/stage.jpg" alt="Stage"/>
+          </p>
+        </div>
+        <div class="panneauContenu" id="panneauContenu2" style="display: none">
+          <p>
+            <img class="PhotoStages" src="ressources/stage1.jpg" alt="Stage1"/>
+          </p>
+        </div>
+        <div class="panneauContenu" id="panneauContenu3" style="display: none;">
+          <p>
+            <img class="PhotoStages" src="ressources/stage2.jpg" alt="Stage3" />
+          </p>
+        </div>
+        <div class="panneauContenu" id="panneauContenu4" style="display: none">
+          <p>
+            <img class="PhotoStages" src="ressources/stage3.jpg" alt="Stage4" />
+          </p>
+        </div>
+      </main>
+    </div>
+
+
+
+
+
+
+<!-- Div du SlideShow format téléphone -->
+    <div id="slider" class="slideshow-container">
+      <div id="prev" class="prev">&#10094;</div>
+      <img src=" " />
+      <div id="next" class="next">&#10095;</div>
+    </div>
+
+  
+<!-- Div du footer -->
+    <section id="footer">
+      <hr/>
+      <div id="texteFooter">
+          <div id="navFooter">
+              <h4>Navigation :</h4>
+              <p><a class="styletext" href="#votresophrologue">Votre sophrologue</a></p>
+              <p><a class="styletext" href="#lasophrologie">La sophrologie</a></p>
+              <p><a class="styletext" href="#yoga">Yoga du rire</a></p>
+              <p><a class="styletext" href="#hypnose">Hypnose</a></p>
+              <p><a class="styletext" href="stages.html">Stages</a></p>
+              <p><a class="styletext" href="temoignages.html">Témoignages</a></p>
+              <p><a class="styletext" href="tarifs.html">Tarifs</a></p>
+              <p><a class="styletext" href="contacts.html">Contacts</a></p>
+          </div>
+          <div id="credits">
+              <h4>Crédits :</h4>
+              <p>Photos : <a class="styletext" href="http://pixabay.com" target="_blank">Pixabay</a></p>
+              <p>Hébergement : Aurélien TESSIER</p>
+              <p>Réalisation : <a class="styletext" href="mailto:raphael.bertrand@lilo.org" title="Cliquer pour envoyer un email a raphael.bertrand@lilo.org">Raphaël BERTRAND</a></p>
+          </div>
+      </div>
+      <p><img id="copy" src="ressources/copyright.png" alt="copyright"></p>  
+  </section>
+
+
+    <script src="js/stages.js"></script>
+
+  </body>
+</html>
